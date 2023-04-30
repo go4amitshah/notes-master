@@ -48,7 +48,7 @@
 #imformationContainer{
   height: 100vh;
   width: 100vw;
-  background-image: url(../public/assets/banner.jpg);
+  /* background-image: url(../public/assets/banner.jpg); */
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -93,7 +93,7 @@
   animation: infinite spin2 5s;
   color: gray;
 }
-@keyframes spin2{
+@keyframes spin2{                                                       
   from{
     transform: translateX(100vw);
   }

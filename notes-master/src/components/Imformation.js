@@ -5,13 +5,6 @@ export default function Imformation() {
     <div>
       
         <div id='imformationContainer' className="container" style={{fontFamily:"Comfortaa"}}>
-        
-        <span className="spiner2 text-start" style={{display:"absolute",maxWidth:"100vw"}}>Do the best you can until you know better.</span>
-        <span className="spiner1 text-start" style={{display:"absolute",maxWidth:"100vw"}}>Success is often achieved by those who don't know that failure is inevitable.</span>
-        <span className="spiner3 text-start" style={{display:"absolute",maxWidth:"100vw"}}>Successful people are not gifted; they just work hard, then succeed on purpose.</span>
-        <span className="spiner4 text-start" style={{display:"absolute",maxWidth:"100vw"}}>Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come.</span>
-        <span className="spiner5 text-start" style={{display:"absolute",maxWidth:"100vw"}}>The only thing standing between you and outrageous success is continuous progress.</span>
-
           <div className="row">
             <i class="fi-xnsux5-code-solid text-center" style={{color:"white"}}></i>
           </div>
