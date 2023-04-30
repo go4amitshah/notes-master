@@ -50,4 +50,90 @@
   width: 100vw;
   background-image: url(../public/assets/banner.jpg);
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.utilDarkBackdrop{
+  backdrop-filter: blur(10px);
+  background-color: rgba(16, 1, 29, 0.164);
+  color: white;
+}
+.btnHoverClass{
+  transition: all 0.5s;
+  color: rgb(255, 199, 95);
+  background-color: rgba(46, 0, 64, 0.764);
+  border: solid 1px white;
+}
+.btnHoverClass:hover{
+  scale: 1.2;
+  color:rgb(253, 253, 253);
+  background-color: rgb(41, 0, 54);
+  border: 1px solid rgb(255, 176, 29);
+}
+
+
+
+
+
+.spiner1{
+  animation: infinite spin1 5s;
+  color: gray;
+}
+@keyframes spin1{
+  from{
+    transform: translateX(100vw);
+  }
+  to{
+    transform: translateX(-100vw);
+  }
+}
+.spiner2{
+  animation: infinite spin2 5s;
+  color: gray;
+}
+@keyframes spin2{
+  from{
+    transform: translateX(100vw);
+  }
+  to{
+    transform: translateX(-100vw);
+  }
+}
+.spiner3{
+  animation: infinite spin3 5s;
+  color: gray;
+}
+@keyframes spin3{
+  from{
+    transform: translateX(100vw);
+  }
+  to{
+    transform: translateX(-100vw);
+  }
+}
+.spiner4{
+  animation: infinite spin4 5s;
+  color: gray;
+}
+@keyframes spin4{
+  from{
+    transform: translateX(100vw);
+  }
+  to{
+    transform: translateX(-100vw);
+  }
+}
+.spiner5{
+  animation: infinite spin5 5s;
+  color: gray;
+}
+@keyframes spin5{
+  from{
+    transform: translateX(100vw);
+  }
+  to{
+    transform: translateX(-100vw);
+  }
 }
