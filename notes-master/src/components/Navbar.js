@@ -7,7 +7,7 @@ export default function Navbar() {
         
       <div className="container">
         <div className="navbar navbar-expand-lg">
-            <div className="navbar-brand">notesMasters!</div>
+            <div className="navbar-brand"  style={{fontFamily:"Sigmar",color:"white"}}>   <h3> notesMasters! </h3></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#show" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
