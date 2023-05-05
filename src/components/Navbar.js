@@ -14,10 +14,12 @@ export default function Navbar() {
             <div id='show' className="collapse navbar-collapse">
                 <ul className="navbar-nav text-decoration-none">
                     <li className="navbar-item mx-1">
-                        <a id="navbarStyling" href="#About" className="navbar-link">About</a>
+                        <h4><a id="navbarStyling" href="#About" className="navbar-link">Home</a></h4>
                     </li>
                     <li className="navbar-item mx-1">
-                        <a id="navbarStyling" href="#Prcing" className="navbar-link">Pricing</a>
+                        <h4>
+                            <a id="navbarStyling" href="#Prcing" className="navbar-link">Pricing</a>
+                        </h4>
                     </li>
                     {/* <li id='navbarStyling' className="navbar-item"></li> */}
                 </ul>
