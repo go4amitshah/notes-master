@@ -1,14 +1,6 @@
 import React from 'react'
 import '../App.css'
 import { BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
-import Navbar from "./Navbar"
-import Maths from './Maths';
-import BDE from './BDE';
-import Physics from './Physics';
-import Boop from './Boop';
-import Swd from './Swd';
-import Ic from './Ic';
-import LayoutSingle from './LayoutSingle';
 const Home = () =>{
   return(
     <h1>Hello</h1>
@@ -17,7 +9,7 @@ const Home = () =>{
 }
 export default function Imformation() {
   return (
-    <div>
+    <div style={{position:"relative"}}>
 
 
 
@@ -31,7 +23,7 @@ export default function Imformation() {
             </h1>
             
           </div>
-            <div className="row">
+            <div className="row d-flex" style={{justifyContent:"center"}}>
               <hr style={{width:"85vw"}}/>
 
             </div>
@@ -98,15 +90,7 @@ export default function Imformation() {
         </div>
 
     
-        <Routes>
-             <Route path="/" element={<LayoutSingle/>}/>
-             <Route path="/maths" element={<Maths/>}/>
-             <Route path="/bde" element={<BDE/>}/>
-             <Route path="/swd" element={<Swd/>}/>
-             <Route path="/physics" element={<Physics/>}/>
-             <Route path="/ic" element={<Ic/>}/>
-             <Route path="/boop" element={<Boop/>}/>
-            </Routes>
+            
         
     </div>
   )
