@@ -34,9 +34,9 @@ export default function Navbar() {
     return (  
     <div>
         
-      <div className="container">
-        <div className="navbar navbar-expand-lg">
-            <div className="navbar-brand"  style={{fontFamily:"Sigmar",color:"white"}}>   <h3> 
+      <div className="container-fluid px-0  myNavbar" style={{marginBottom:"5vh"}}>
+        <div className="navbar navbar-expand-lg" style={{backdropFilter:"blur(50px)"}}>
+            <div className="navbar-brand px-5"  style={{fontFamily:"Sigmar",color:"white"}}>   <h3> 
                 
             <Link to="/" style={{color:"white", textDecoration:"none"}}>
             notesMasters!

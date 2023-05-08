@@ -49,9 +49,152 @@
   /* width: 20px; */
 }
 .utilDarkBackdrop{
-  background-color: #00091aa9;
+  background-color: #00091a00;
   backdrop-filter: blur(5px);
+  box-shadow: rgba(255, 255, 255, 0.159) 0 0 40px;
 }
 .btnHoverClass{
-  border-right: white solid 4px;
+  border-right: white solid 2px;
+
+  transition: 0.5s all;
+}
+.btnHoverClass:hover{
+  color: crimson;
+  transform: translate(-10px);
+}
+.layoutOne{
+  /* height: 100vh; */
+  padding-bottom: 10vh;
+  width: 100vw;
+  border: 0px solid #1d1f1c;
+  background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0.291)),linear-gradient(to top, #000000, rgba(0, 0, 0, 0)),
+  url('../public/assets/flowers.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.wrapper{
+  position: absolute;
+  background-image:linear-gradient(to top, #000000, rgba(0, 0, 0, 0)),
+  url('../public/assets/banner.jpg');
+  height: 45vh;
+  width: 97.5vw;
+  z-index: 0;
+  background-size: cover;
+
+}
+.layoutSingleCSS{
+  padding-bottom: 10vh;
+  width: 100vw;
+  height: 100vh;
+  border: 0px solid #1d1f1c;
+  
+  background-image: linear-gradient(to bottom, #000000,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),linear-gradient(to top, #000000,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),linear-gradient(to left, #000000,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),linear-gradient(to right, #000000,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),  url('../public/assets/leaves.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width:600px){
+  .blob1{
+    display: none;
+  }
+  .blob2{
+    display: none;
+  }
+  .wrapper{
+    background-image:none;
+  }
+  body{
+    background-image: url(../public/assets/rocket.jpg);
+    background-size: 98.5vw;
+    
+  }
+  .layoutOne{
+    background-image: linear-gradient(to bottom, #000000d5, rgba(0, 0, 0, 0)),linear-gradient(to top, #000000, rgba(170, 255, 211, 0.264)), linear-gradient(to left, black,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, black,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+  url('../public/assets/flowers.png');
+  background-size: cover;
+  }
+}
+.blob1{
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  top: 40%;
+  background-image: url(../public/assets/crimsonBlob.png);
+  background-size: cover ;
+  animation-name: blobRotate;
+  animation-duration: 20s;
+  left: -10%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.blob2{
+  position: absolute;
+  height: 40%;
+  width: 50%;
+  top: 80%;
+  background-image: url(../public/assets/cyanBlob.png);
+  background-size: 100% 80% ;
+  background-repeat: no-repeat;
+  transform-origin: 50% 40%;
+  /* background-color: white; */
+  animation-name: blobRotate2;
+  animation-duration: 20s;
+  left: 40%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-blend-mode: lighten;
+}
+@keyframes blobRotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+@keyframes blobRotate2{
+  from{
+    transform: rotate(360deg);
+    
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+.sidebar{
+  color: white;
+  /* background-color: rgba(233, 135, 255, 0.166); */
+  border-right: solid rgba(255, 255, 255, 0.373) 2px;
+  /* border-radius: 10px; */
+  padding: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar .row{
+  /* background-color: rgb(34, 34, 34); */
+  /* width:20rem; */
+  padding: 5px;
+  border-left: #61dafb31 solid 4px;
+  color: white;
+  text-decoration: none;
+}
+Link{
+  color: white;
+}
+.sidebarLinks{
+  color: white;
+  text-decoration: underline;
+}
+.myNavbar{
+  box-shadow: rgb(83, 0, 121) 0 0 40px;
+  background: linear-gradient(to bottom, rgb(82 0 128 / 62%) , rgb(36, 0, 45));
 }
