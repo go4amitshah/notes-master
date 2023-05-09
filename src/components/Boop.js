@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LayoutSingle from "./LayoutSingle";
 import "../App.css";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
@@ -6,12 +6,7 @@ import Imformation from "./Imformation";
 import Navbar from "./Navbar";
 import BoopClass from "./BOOP/BoopClass";
 import BoopIntro from "./BOOP/BoopIntro";
-const Temp1 = () => {
-  return <h1 style={{ color: "white" }}>TEST Works</h1>;
-};
-const Temp2 = () => {
-  return <h1>AGAIN Works</h1>;
-};
+import { useState } from "react";
 
 export default function Boop() {
   return (
@@ -28,6 +23,9 @@ export default function Boop() {
               style={{ fontSize: "2vw", border: "none" }}
             >
               Topics we cover!
+              <button className="btn btn-dark" onClick={toggle()}>
+                Toggle
+              </button>
               {/* <button
                 id="sidebarToggler"
                 onClick={toggleStyle(div, "display", "none")}
@@ -35,7 +33,7 @@ export default function Boop() {
                 <span class="navbar-toggler-icon"></span>
               </button> */}
             </div>
-            <div id="navbarBtnTarget">
+            <div id="navbarBtnTarget" style={{ color: "white" }}>
               <div className="row">
                 <Link className="sidebarLinks" to="/boop/1">
                   Intoduction
@@ -100,4 +98,21 @@ export default function Boop() {
       </div>
     </div>
   );
+  function toggle() {
+    var sidebar = document.getElementById("navbarBtnTarget");
+    // var state = "open";
+    var state = "open";
+    if (sidebar) {
+      if (state === "open") {
+        sidebar.style.transition = "all 0.5s linear";
+        sidebar.style.transform = "translate(-200%, 0%)";
+        state = "closed";
+      } else {
+        sidebar.style.transition = "all 0.5s linear";
+        sidebar.style.transform = "translate(0%, 0px)";
+        state = "open";
+        state = "open";
+      }
+    }
+  }
 }
