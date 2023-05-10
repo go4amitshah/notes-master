@@ -7,6 +7,9 @@ const Home = () => {
 export default function Imformation() {
   return (
     <div className="div">
+      <div className="blob1"></div>
+      <div className="blob2"></div>
+      <div className="blob3"></div>
       <div className="wrapper"></div>
       <div style={{ position: "relative" }}>
         <div
@@ -99,7 +102,7 @@ export default function Imformation() {
 
                         <div className="row">
                           <div className="btnHoverClass">
-                            <Link className="buttonImfo" to="/boop">
+                            <Link className="buttonImfo" to="/boop/1">
                               BOOP
                             </Link>
                           </div>

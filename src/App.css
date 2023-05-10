@@ -215,7 +215,7 @@
   /* background-color: rgba(233, 135, 255, 0.166); */
   border-right: solid rgba(255, 255, 255, 0.373) 2px;
   /* border-radius: 10px; */
-  padding: 4vh;
+  padding: 13vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,5 +253,17 @@ Link {
 .topAdjuster {
   margin-top: 0vh;
 }
-@media (max-width= 600px) {
+@media (max-width: 600px) {
+  #sidebar {
+    display: none;
+  }
+  .hider {
+    display: none;
+  }
+  #hider {
+    display: none;
+  }
+}
+.myBorderLeft {
+  border-left: #61dafb solid 5px;
 }

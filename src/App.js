@@ -11,9 +11,6 @@ function App() {
   };
   return (
     <div classNameName="App">
-      <div className="blob1"></div>
-      <div className="blob2"></div>
-      <div className="blob3"></div>
       <Navbar />
       {/* <Imformation/> */}
       {/* <Router> */}
