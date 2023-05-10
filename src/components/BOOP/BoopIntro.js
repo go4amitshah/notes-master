@@ -1,9 +1,9 @@
 import React from "react";
-import LayoutSingle from "../LayoutSingle";
+// import LayoutSingle from "../LayoutSingle";
 
 export default function BoopIntro() {
   return (
-    <div style={{ fontFamily: "Comfortaa" }}>
+    <div className="myBorderLeftSubtle " style={{ fontFamily: "Comfortaa" }}>
       <div className="container-fluid">
         <div className="row my-5">
           <div className="aligner mx-3">

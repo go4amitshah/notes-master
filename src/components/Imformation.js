@@ -1,15 +1,10 @@
 import React from "react";
 import "../App.css";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-const Home = () => {
-  return <h1>Hello</h1>;
-};
+import { Link } from "react-router-dom";
+
 export default function Imformation() {
   return (
     <div className="div">
-      <div className="blob1"></div>
-      <div className="blob2"></div>
-      <div className="blob3"></div>
       <div className="wrapper"></div>
       <div style={{ position: "relative" }}>
         <div

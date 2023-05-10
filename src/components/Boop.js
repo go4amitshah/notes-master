@@ -19,8 +19,12 @@ export default function Boop() {
           style={{ flexDirection: "column" }}
         >
           <div className="row" style={{ marginRight: "0px" }}>
-            <div className="col-2 hider">
-              <div id="sidebar" className="sidebar col-2">
+            <div className="col-2 hider" style={{ display: "sticky" }}>
+              <div
+                id="sidebar"
+                style={{ position: "fixed", height: "100vh" }}
+                className="sidebar col-2"
+              >
                 <div
                   className="row sidebarLinks"
                   style={{ fontSize: "2vw", border: "none" }}
@@ -95,32 +99,22 @@ export default function Boop() {
         </div>
       </div>
       <div className="container my-3">
-        <div className="row">
+        <div className="row" style={{ display: "flex", justifyContent: "end" }}>
           <div
-            className="col d-flex"
+            className=" col-4 d-flex"
             style={{
               flexDirection: "column",
               justifyContent: "center",
-              alignItems: "center",
+              alignContent: "end",
             }}
           >
-            <h1>notesMaster!</h1>
-          </div>
-          <div
-            className=" col d-flex"
-            style={{
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <h3 id="hider">
+            <h3 id="hiderr">
               We hope you foun what you were looking for and learnt something
               new!
             </h3>
           </div>
           <div
-            className="col d-flex"
+            className="col-3 d-flex"
             style={{
               flexDirection: "column",
               justifyContent: "center",
@@ -184,7 +178,7 @@ export default function Boop() {
             </Link>
           </div>
           <div
-            className="col d-flex"
+            className="col-3 d-flex"
             style={{
               flexDirection: "column",
               justifyContent: "center",
