@@ -7,6 +7,8 @@ import Navbar from "./Navbar";
 import BoopClass from "./BOOP/BoopClass";
 import BoopIntro from "./BOOP/BoopIntro";
 import { useState } from "react";
+import BoopDT from "./BOOP/BoopDT";
+import BoopInOut from "./BOOP/BoopInOut";
 
 export default function Boop() {
   return (
@@ -38,12 +40,12 @@ export default function Boop() {
                     </Link>
                   </div>
                   <div className="row">
-                    <Link className="sidebarLinks" to="">
+                    <Link className="sidebarLinks" to="/boop/2">
                       Data Types
                     </Link>
                   </div>
                   <div className="row">
-                    <Link className="sidebarLinks" to="">
+                    <Link className="sidebarLinks" to="/boop/3">
                       Input/Output
                     </Link>
                   </div>
@@ -93,6 +95,8 @@ export default function Boop() {
             <div className="col-10">
               <Routes>
                 <Route path="/boop/1" element={<BoopIntro />} />
+                <Route path="/boop/2" element={<BoopDT />} />
+                <Route path="/boop/3" element={<BoopInOut />} />
               </Routes>
             </div>
           </div>
